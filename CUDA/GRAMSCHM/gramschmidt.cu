@@ -199,7 +199,7 @@ void gramschmidtCuda(int ni, int nj, DATA_TYPE POLYBENCH_2D(A,NI,NJ,ni,nj), DATA
 		gramschmidt_kernel3<<<gridKernel3,block>>>(ni, nj, A_gpu, R_gpu, Q_gpu, k);
 		cudaThreadSynchronize();
 	}
-	printf("GPU Time in seconds:\n");
+	printf("GPU Time in seconds:");
   	polybench_stop_instruments;
  	polybench_print_instruments;
 	
@@ -252,7 +252,7 @@ int main(int argc, char *argv[])
 
 		gramschmidt(ni, nj, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(R), POLYBENCH_ARRAY(Q));
 
-		printf("CPU Time in seconds:\n");
+		printf("CPU Time in seconds:");
 	  	polybench_stop_instruments;
 	 	polybench_print_instruments;
 	

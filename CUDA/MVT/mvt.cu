@@ -163,7 +163,7 @@ void mvtCuda(int n, DATA_TYPE POLYBENCH_2D(a, N, N, n, n), DATA_TYPE POLYBENCH_1
 	cudaThreadSynchronize();
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	printf("GPU Time in seconds:");
   	polybench_stop_instruments;
  	polybench_print_instruments;
 	
@@ -223,7 +223,7 @@ int main()
 		runMvt(n, POLYBENCH_ARRAY(a), POLYBENCH_ARRAY(x1), POLYBENCH_ARRAY(x2), POLYBENCH_ARRAY(y_1), POLYBENCH_ARRAY(y_2));
 
 		/* Stop and print timer. */
-		printf("CPU Time in seconds:\n");
+		printf("CPU Time in seconds:");
 	  	polybench_stop_instruments;
 	 	polybench_print_instruments;
 	

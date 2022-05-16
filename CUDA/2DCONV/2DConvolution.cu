@@ -138,7 +138,7 @@ void convolution2DCuda(int ni, int nj, DATA_TYPE POLYBENCH_2D(A, NI, NJ, ni, nj)
 	cudaThreadSynchronize();
 	
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	printf("GPU Time in seconds:");
 
   	polybench_stop_instruments;
   	polybench_print_instruments;
@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
 		conv2D(ni, nj, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
 
 		/* Stop and print timer. */
-		printf("CPU Time in seconds:\n");
+		printf("CPU Time in seconds:");
 	  	polybench_stop_instruments;
 	 	polybench_print_instruments;
 	

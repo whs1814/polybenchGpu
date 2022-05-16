@@ -205,7 +205,7 @@ void bicgCuda(int nx, int ny, DATA_TYPE POLYBENCH_2D(A,NX,NY,nx,ny), DATA_TYPE P
 	cudaThreadSynchronize();
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	printf("GPU Time in seconds:");
   	polybench_stop_instruments;
  	polybench_print_instruments;
 	
@@ -248,7 +248,7 @@ int main(int argc, char** argv)
 		bicg_cpu(nx, ny, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(r), POLYBENCH_ARRAY(s), POLYBENCH_ARRAY(p), POLYBENCH_ARRAY(q));
 
 		/* Stop and print timer. */
-		printf("CPU Time in seconds:\n");
+		printf("CPU Time in seconds:");
 	  	polybench_stop_instruments;
 	 	polybench_print_instruments;
 	

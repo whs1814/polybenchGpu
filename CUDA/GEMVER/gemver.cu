@@ -237,7 +237,7 @@ void gemverCuda(int n, DATA_TYPE alpha, DATA_TYPE beta,
 	cudaThreadSynchronize();
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	printf("GPU Time in seconds:");
   	polybench_stop_instruments;
  	polybench_print_instruments;
 
@@ -317,7 +317,7 @@ int main(int argc, char *argv[])
 
 
 		/* Stop and print timer. */
-		printf("CPU Time in seconds:\n");
+		printf("CPU Time in seconds:");
   		polybench_stop_instruments;
  		polybench_print_instruments;
 		

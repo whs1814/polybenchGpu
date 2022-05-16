@@ -253,7 +253,7 @@ void mm3Cuda(int ni, int nj, int nk, int nl, int nm,
 	cudaThreadSynchronize();
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	printf("GPU Time in seconds:");
   	polybench_stop_instruments;
  	polybench_print_instruments;
 	cudaMemcpy(G_outputFromGpu, G_gpu, sizeof(DATA_TYPE) * NI * NL, cudaMemcpyDeviceToHost);
@@ -319,7 +319,7 @@ int main(int argc, char** argv)
 			POLYBENCH_ARRAY(F), POLYBENCH_ARRAY(G));
 	
 		/* Stop and print timer. */
-		printf("CPU Time in seconds:\n");
+		printf("CPU Time in seconds:");
 	  	polybench_stop_instruments;
 	 	polybench_print_instruments;
 
